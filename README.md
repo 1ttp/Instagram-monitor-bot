@@ -35,7 +35,7 @@ Run the bot
 
 npm start
 Configuration
-Environment Variables
+Environment Variables.    
 Configuration:    
 All configuration is done through environment variables in the .env file:
 
@@ -50,22 +50,23 @@ CHECK_INTERVAL=90000
 Bot Intents
 Required Discord Gateway Intents:
 
-Guilds
-GuildMessages
-MessageContent
-DirectMessages
-Commands
-Command	Description	Usage	Access
-!banwatch	Monitor an Instagram account for bans	!banwatch <username>	All allowed users
-!unbanwatch	Monitor a banned account for reactivation	!unbanwatch <username>	All allowed users
-!banlist	View all accounts being monitored for bans	!banlist	All allowed users
-!unbanlist	View all accounts being monitored for unbans	!unbanlist	All allowed users
-!giveaccess	Grant bot access to a new user	!giveaccess <user_id>	Admin only
-!help	Display help message with all commands	!help	All users
-!fake	Generate a test embed (demo purposes)	!fake	All allowed users
-Workflow
-Ban Watch Workflow
-flowchart TD
+Guilds:       
+GuildMessages.       
+MessageContent.       
+DirectMessages.       
+Commands:        
+Command	Description	Usage	Access.       
+!banwatch	Monitor an Instagram account for bans	!banwatch <username>	All allowed users.       
+!unbanwatch	Monitor a banned account for reactivation	!unbanwatch <username>	All allowed users.       
+!banlist	View all accounts being monitored for bans	!banlist	All allowed users.         
+!unbanlist	View all accounts being monitored for unbans	!unbanlist	All allowed users.       
+!giveaccess	Grant bot access to a new user	!giveaccess <user_id>	Admin only.       
+!help	Display help message with all commands	!help	All users.       
+!fake	Generate a test embed (demo purposes)	!fake	All allowed users.  
+
+Workflow:        
+Ban Watch Workflow.    
+flowchart TD.     
     A[User: !banwatch username] --> B{Check Account Status}
     B -->|Account Valid| C[Add to Ban Watch List]
     B -->|Account Banned| D[Return Error: Already Banned]
@@ -154,50 +155,50 @@ sequenceDiagram
     else Account already banned
         Bot->>Discord: Send error embed
     end
-Project Structure
-ig-monitor/
-├── index.js           # Main bot file
-├── package.json       # Dependencies and scripts
-├── README.md          # This file
-└── .gitignore        # Git ignore file
-How It Works
-Account Status Detection
-The bot checks Instagram account status by:
+Project Structure:    
+ig-monitor/.   
+├── index.js           # Main bot file.    
+├── package.json       # Dependencies and scripts.    
+├── README.md          # This file.        
+└── .gitignore        # Git ignore file.    
+How It Works:     
+Account Status Detection:     
+The bot checks Instagram account status by:     
 
-Fetching the Instagram profile page
-Parsing the og:description meta tag
-Analyzing the description length to determine ban status
-Length = 3: Account is banned
-Length > 3: Account is active
-Monitoring System
-Interval: Checks every 90 seconds
-Concurrency: Multiple accounts can be monitored simultaneously
-State Management: Uses watchedAccounts object and separate ban/unban watch lists
-Automatic Cleanup: Removes accounts from watch lists after status change detected
-Security Considerations
-Important Security Notes:
+Fetching the Instagram profile page.    
+Parsing the og:description meta tag.     
+Analyzing the description length to determine ban status.     
+Length = 3: Account is banned.     
+Length > 3: Account is active.     
+Monitoring System.     
+Interval: Checks every 90 seconds.      
+Concurrency: Multiple accounts can be monitored simultaneously.     
+State Management: Uses watchedAccounts object and separate ban/unban watch lists.      
+Automatic Cleanup: Removes accounts from watch lists after status change detected.     
+Security Considerations.     
+Important Security Notes:      
 
-Never commit your bot token - The token in the code should be replaced with environment variables
-Use environment variables for sensitive data:
-const TOKEN = process.env.DISCORD_TOKEN;
-Implement rate limiting to prevent Instagram from blocking requests
-Regular token rotation is recommended for production use
-Error Handling
-The bot includes comprehensive error handling:
+Never commit your bot token - The token in the code should be replaced with environment variables.     
+Use environment variables for sensitive data:     
+const TOKEN = process.env.DISCORD_TOKEN;      
+Implement rate limiting to prevent Instagram from blocking requests.     
+Regular token rotation is recommended for production use.     
+Error Handling.     
+The bot includes comprehensive error handling:      
 
-Command validation
-Permission checks
-API error handling
-DM notifications for errors
-Console logging for debugging
-Features in Detail
-Rich Embeds
-All notifications use Discord's rich embed system with:
+Command validation.     
+Permission checks.      
+API error handling.     
+DM notifications for errors.     
+Console logging for debugging.     
+Features in Detail.    
+Rich Embeds.     
+All notifications use Discord's rich embed system with:      
 
-Color coding (Black: #000000, Red: #FF0000, etc.)
-Timestamps
-Author information
-Footer branding
+Color coding (Black: #000000, Red: #FF0000, etc.).   
+Timestamps.    
+Author information.    
+Footer branding.     
 Animated GIFs for visual feedback
 Caching
 The bot maintains caches for:
