@@ -26,8 +26,7 @@ Discord.js v14+
 Setup Steps
 Clone the repository
 
-git clone https://github.com/7ttp/ig-monitor.git
-cd ig-monitor
+git clone https://github.com/brahmjotsinghmonga-source/Instagram-monitor-bot
 Install dependencies
 
 npm install
