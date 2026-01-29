@@ -231,3 +231,5 @@ For support, please open an issue in the GitHub repository or contact the mainta
 
 Disclaimer
 This bot is for educational purposes only. Please respect Instagram's Terms of Service and rate limits. The developers are not responsible for any misuse of this software.
+
+Made by Brahmjot Monga 
