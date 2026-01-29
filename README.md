@@ -1,24 +1,17 @@
 Instagram Monitor Discord Bot:                
 A Discord bot that monitors Instagram accounts for ban and unban status changes. Get real-time notifications when an Instagram account gets banned or reactivated.
 
-Features
-Ban Monitoring: Track Instagram accounts and get notified when they get banned
-Unban Monitoring: Monitor banned accounts and get alerted when they're reactivated
-Real-time Updates: Continuous monitoring with 90-second check intervals
-Access Control: Manage who can use the bot with user ID whitelisting
-Watch Lists: View all currently monitored accounts
-Rich Embeds: Beautiful Discord embed notifications with timestamps
-Error Handling: Comprehensive error handling with DM notifications
-Table of Contents
-Installation
-Configuration
-Commands
-Workflow
-Project Structure
-Contributing
-License
-Installation
-Prerequisites
+Features:
+Ban Monitoring:Track Instagram accounts and get notified when they get banned.           
+Unban Monitoring: Monitor banned accounts and get alerted when they're reactivated.         
+Real-time Updates: Continuous monitoring with 90-second check intervalsb.      
+Access Control: Manage who can use the bot with user ID whitelisting.           
+Watch Lists: View all currently monitored accounts.          
+Rich Embeds: Beautiful Discord embed notifications with timestamps.         
+Error Handling: Comprehensive error handling with DM notifications.           
+Table of Contents:        
+Installation:
+
 Node.js v16.9.0 or higher
 npm or yarn
 A Discord Bot Token
@@ -43,6 +36,7 @@ Run the bot
 npm start
 Configuration
 Environment Variables
+Configuration:    
 All configuration is done through environment variables in the .env file:
 
 DISCORD_TOKEN: Your Discord bot token (required)
