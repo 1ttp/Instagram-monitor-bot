@@ -203,27 +203,27 @@ Animated GIFs for visual feedback
 Caching
 The bot maintains caches for:
 
-Ban status (bancache)
-Unban status (unbancache)
-Follower data (storedFollowerData)
-Contributing
-Contributions are welcome! Please follow these steps:
+Ban status (bancache).    
+Unban status (unbancache).    
+Follower data (storedFollowerData).    
+Contributing.     
+Contributions are welcome! Please follow these steps:        
 
-Fork the repository
-Create a feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some AmazingFeature')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Fork the repository.       
+Create a feature branch (git checkout -b feature/AmazingFeature).       
+Commit your changes (git commit -m 'Add some AmazingFeature').     
+Push to the branch (git push origin feature/AmazingFeature).       
+Open a Pull Request.     
+License.    
+This project is licensed under the MIT License - see the LICENSE file for details.     
 
-Acknowledgments
-Discord.js - Discord API wrapper
-Instagram - Profile data source
-Support
-For support, please open an issue in the GitHub repository or contact the maintainers.
+Acknowledgments.     
+Discord.js - Discord API wrapper.     
+Instagram - Profile data source.     
+Support.     
+For support, please open an issue in the GitHub repository or contact the maintainers.     
 
-Disclaimer
+Disclaimer.    
 This bot is for educational purposes only. Please respect Instagram's Terms of Service and rate limits. The developers are not responsible for any misuse of this software.
 
 Made by Brahmjot Monga 
