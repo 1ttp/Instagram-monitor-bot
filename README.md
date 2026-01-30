@@ -1,3 +1,4 @@
+Instagram Monitor Discord Bot
 Instagram Monitor Discord Bot:                
 A Discord bot that monitors Instagram accounts for ban and unban status changes. Get real-time notifications when an Instagram account gets banned or reactivated.
 
